@@ -1,4 +1,5 @@
 // Components
+import { Header } from '../../components/layout/Header';
 import { Sidebar } from '../../components/layout/Sidebar';
 
 // Styles
@@ -12,7 +13,10 @@ export const Main = ({ children }: IProps) => {
     <div className={styles.base}>
       <Sidebar />
 
-      {children}
+      <div className={styles.content}>
+        <Header />
+        {children}
+      </div>
     </div>
   );
 };
