@@ -41,11 +41,11 @@ export const user = {
 
   info: {
     base: cn('flex flex-col'),
-    name: cn('text-sm font-bold tracking-wide'),
-    level: cn('text-xs font-semibold tracking-wide text-dark-text-primary/50'),
+    name: cn('text-sm font-bold tracking-wide', text.primary),
+    level: cn('text-xs font-semibold tracking-wide', text.dimmed),
   },
 
-  icon: cn('ml-auto fill-dark-text-primary'),
+  icon: cn('ml-auto fill-light-text-primary dark:fill-dark-text-primary'),
 };
 
 export const section = (border: boolean) =>
