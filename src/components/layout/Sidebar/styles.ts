@@ -9,7 +9,7 @@ export const borderBottom = cn(border.borderColor, 'border-b');
 // ELements
 export const base = cn(
   // Size
-  'h-screen w-72',
+  'h-screen min-w-[18rem] w-72',
 
   // Border
   border.borderColor,
@@ -27,8 +27,8 @@ export const user = {
     // Background
     background.elevationHover,
 
-    // Padding
-    'p-4'
+    // Size
+    'p-4 h-20'
   ),
 
   avatar: cn(
